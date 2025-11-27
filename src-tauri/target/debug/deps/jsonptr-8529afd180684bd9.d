@@ -1,0 +1,14 @@
+/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/deps/jsonptr-8529afd180684bd9.d: /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/lib.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/pointer.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/token.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/error.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/assign.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/delete.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/resolve.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/prelude.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/tokens.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/../README.md
+
+/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/deps/libjsonptr-8529afd180684bd9.rmeta: /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/lib.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/pointer.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/token.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/error.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/assign.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/delete.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/resolve.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/prelude.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/tokens.rs /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/../README.md
+
+/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/lib.rs:
+/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/pointer.rs:
+/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/token.rs:
+/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/error.rs:
+/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/assign.rs:
+/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/delete.rs:
+/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/resolve.rs:
+/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/prelude.rs:
+/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/tokens.rs:
+/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jsonptr-0.4.7/src/../README.md:
