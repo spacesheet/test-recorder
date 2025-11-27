@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useRecorder } from './hooks/useRecorder';
 import { StatusPanel } from './components/StatusPanel';
 import { RecordingButton } from './components/RecordingButton';
