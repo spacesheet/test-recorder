@@ -40,11 +40,14 @@ impl Default for HTSConfig {
                 "eFriend.exe".to_string(),
                 "Ctrade.exe".to_string(),
                 "KOAStudio.exe".to_string(),
+                "hable.exe".to_string()
             ],
             window_titles: vec![
                 "키움".to_string(),
                 "영웅문".to_string(),
                 "이베스트".to_string(),
+                "키움".to_string(),
+                "KB증권".to_string()
             ],
             check_interval_ms: 1000,
         }
