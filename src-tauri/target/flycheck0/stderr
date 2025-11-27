@@ -1,0 +1,365 @@
+   0.564516167s  INFO prepare_target{force=false package_id=test-recorder v0.1.0 (/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri) target="test-recorder"}: cargo::core::compiler::fingerprint: dependency on `build_script_build` is newer than we are 1764230754.356721087s > 1764230644.147486017s "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/objc_exception-0.1.2"
+   0.579833250s  INFO prepare_target{force=false package_id=test-recorder v0.1.0 (/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri) target="test-recorder"}: cargo::core::compiler::fingerprint: dependency on `build_script_build` is newer than we are 1764230754.356609591s > 1764230669.760566350s "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mac-notification-sys-0.6.8"
+   0.630948542s  INFO prepare_target{force=false package_id=test-recorder v0.1.0 (/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri) target="test-recorder"}: cargo::core::compiler::fingerprint: dependency on `build_script_build` is newer than we are 1764230754.356674172s > 1764230657.660856863s "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tao-0.16.10"
+   0.647062042s  INFO prepare_target{force=false package_id=test-recorder v0.1.0 (/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri) target="test-recorder"}: cargo::core::compiler::fingerprint: fingerprint error for test-recorder v0.1.0 (/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri)/Check { test: false }/TargetInner { name: "test-recorder", doc: true, ..: with_path("/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/src/main.rs", Edition2021) }
+   0.647085167s  INFO prepare_target{force=false package_id=test-recorder v0.1.0 (/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri) target="test-recorder"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/.fingerprint/test-recorder-841c5bf8edac67ac/bin-test-recorder`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.657871833s  INFO prepare_target{force=false package_id=cocoa v0.25.0 target="cocoa"}: cargo::core::compiler::fingerprint: fingerprint dirty for cocoa v0.25.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("cocoa", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/lib.rs", Edition2015) }
+   0.657888000s  INFO prepare_target{force=false package_id=cocoa v0.25.0 target="cocoa"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "objc" })
+   0.659424583s  INFO prepare_target{force=false package_id=cocoa-foundation v0.1.2 target="cocoa_foundation"}: cargo::core::compiler::fingerprint: fingerprint dirty for cocoa-foundation v0.1.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("cocoa_foundation", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-foundation-0.1.2/src/lib.rs", Edition2015) }
+   0.659431083s  INFO prepare_target{force=false package_id=cocoa-foundation v0.1.2 target="cocoa_foundation"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "objc" })
+   0.661040792s  INFO prepare_target{force=false package_id=objc v0.2.7 target="objc"}: cargo::core::compiler::fingerprint: fingerprint dirty for objc v0.2.7/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("objc", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/objc-0.2.7/src/lib.rs", Edition2015) }
+   0.661049250s  INFO prepare_target{force=false package_id=objc v0.2.7 target="objc"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "objc_exception" })
+   0.662116750s  INFO prepare_target{force=false package_id=objc_exception v0.1.2 target="objc_exception"}: cargo::core::compiler::fingerprint: fingerprint dirty for objc_exception v0.1.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("objc_exception", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/objc_exception-0.1.2/src/lib.rs", Edition2015) }
+   0.662122500s  INFO prepare_target{force=false package_id=objc_exception v0.1.2 target="objc_exception"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDependency { name: "build_script_build", dep_mtime: FileTime { seconds: 1764230754, nanos: 356721087 }, max_mtime: FileTime { seconds: 1764230644, nanos: 147486017 } })
+   0.670035667s  INFO prepare_target{force=false package_id=tauri v1.8.3 target="tauri"}: cargo::core::compiler::fingerprint: fingerprint error for tauri v1.8.3/Check { test: false }/TargetInner { ..: lib_target("tauri", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-1.8.3/src/lib.rs", Edition2021) }
+   0.670046167s  INFO prepare_target{force=false package_id=tauri v1.8.3 target="tauri"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/.fingerprint/tauri-824e4c8eaf01fdb7/lib-tauri`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+   0.672337083s  INFO prepare_target{force=false package_id=cocoa v0.24.1 target="cocoa"}: cargo::core::compiler::fingerprint: fingerprint dirty for cocoa v0.24.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("cocoa", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.24.1/src/lib.rs", Edition2015) }
+   0.672350542s  INFO prepare_target{force=false package_id=cocoa v0.24.1 target="cocoa"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "objc" })
+   0.675683958s  INFO prepare_target{force=false package_id=ignore v0.4.25 target="ignore"}: cargo::core::compiler::fingerprint: fingerprint error for ignore v0.4.25/Check { test: false }/TargetInner { benched: false, ..: lib_target("ignore", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ignore-0.4.25/src/lib.rs", Edition2024) }
+   0.675698917s  INFO prepare_target{force=false package_id=ignore v0.4.25 target="ignore"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/.fingerprint/ignore-c900266e30223a76/lib-ignore`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+   0.676217042s  INFO prepare_target{force=false package_id=globset v0.4.18 target="globset"}: cargo::core::compiler::fingerprint: fingerprint error for globset v0.4.18/Check { test: false }/TargetInner { benched: false, ..: lib_target("globset", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.18/src/lib.rs", Edition2024) }
+   0.676226083s  INFO prepare_target{force=false package_id=globset v0.4.18 target="globset"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/.fingerprint/globset-0454f333680c3178/lib-globset`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.677118250s  INFO prepare_target{force=false package_id=regex-automata v0.4.13 target="regex_automata"}: cargo::core::compiler::fingerprint: fingerprint error for regex-automata v0.4.13/Check { test: false }/TargetInner { benched: false, ..: lib_target("regex_automata", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.4.13/src/lib.rs", Edition2021) }
+   0.677128542s  INFO prepare_target{force=false package_id=regex-automata v0.4.13 target="regex_automata"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/.fingerprint/regex-automata-849156eb6d1650d4/lib-regex_automata`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.677476958s  INFO prepare_target{force=false package_id=regex-syntax v0.8.8 target="regex_syntax"}: cargo::core::compiler::fingerprint: fingerprint error for regex-syntax v0.8.8/Check { test: false }/TargetInner { ..: lib_target("regex_syntax", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-syntax-0.8.8/src/lib.rs", Edition2021) }
+   0.677483208s  INFO prepare_target{force=false package_id=regex-syntax v0.8.8 target="regex_syntax"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/.fingerprint/regex-syntax-6e65c056fe823d55/lib-regex_syntax`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.678250250s  INFO prepare_target{force=false package_id=notify-rust v4.11.7 target="notify_rust"}: cargo::core::compiler::fingerprint: fingerprint dirty for notify-rust v4.11.7/Check { test: false }/TargetInner { ..: lib_target("notify_rust", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-rust-4.11.7/src/lib.rs", Edition2021) }
+   0.678256000s  INFO prepare_target{force=false package_id=notify-rust v4.11.7 target="notify_rust"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "mac_notification_sys" })
+   0.679281708s  INFO prepare_target{force=false package_id=mac-notification-sys v0.6.8 target="mac_notification_sys"}: cargo::core::compiler::fingerprint: fingerprint dirty for mac-notification-sys v0.6.8/Check { test: false }/TargetInner { ..: lib_target("mac_notification_sys", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mac-notification-sys-0.6.8/src/lib.rs", Edition2018) }
+   0.679287833s  INFO prepare_target{force=false package_id=mac-notification-sys v0.6.8 target="mac_notification_sys"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDependency { name: "build_script_build", dep_mtime: FileTime { seconds: 1764230754, nanos: 356609591 }, max_mtime: FileTime { seconds: 1764230669, nanos: 760566350 } })
+   0.682384792s  INFO prepare_target{force=false package_id=open v3.2.0 target="open"}: cargo::core::compiler::fingerprint: fingerprint error for open v3.2.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("open", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/open-3.2.0/src/lib.rs", Edition2018) }
+   0.682390208s  INFO prepare_target{force=false package_id=open v3.2.0 target="open"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/.fingerprint/open-58a0cca4bc40e54d/lib-open`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+   0.682705333s  INFO prepare_target{force=false package_id=pathdiff v0.2.3 target="pathdiff"}: cargo::core::compiler::fingerprint: fingerprint error for pathdiff v0.2.3/Check { test: false }/TargetInner { ..: lib_target("pathdiff", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pathdiff-0.2.3/src/lib.rs", Edition2018) }
+   0.682711417s  INFO prepare_target{force=false package_id=pathdiff v0.2.3 target="pathdiff"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/.fingerprint/pathdiff-1ab329719506c5c7/lib-pathdiff`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.684702083s  INFO prepare_target{force=false package_id=regex v1.12.2 target="regex"}: cargo::core::compiler::fingerprint: fingerprint error for regex v1.12.2/Check { test: false }/TargetInner { ..: lib_target("regex", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-1.12.2/src/lib.rs", Edition2021) }
+   0.684708250s  INFO prepare_target{force=false package_id=regex v1.12.2 target="regex"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/.fingerprint/regex-88ab5188be89b995/lib-regex`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+   0.685055708s  INFO prepare_target{force=false package_id=rfd v0.10.0 target="rfd"}: cargo::core::compiler::fingerprint: fingerprint error for rfd v0.10.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rfd", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rfd-0.10.0/src/lib.rs", Edition2021) }
+   0.685061250s  INFO prepare_target{force=false package_id=rfd v0.10.0 target="rfd"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/.fingerprint/rfd-fcca91df949ef769/lib-rfd`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+   0.685662167s  INFO prepare_target{force=false package_id=objc-foundation v0.1.1 target="objc_foundation"}: cargo::core::compiler::fingerprint: fingerprint error for objc-foundation v0.1.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("objc_foundation", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/objc-foundation-0.1.1/src/lib.rs", Edition2015) }
+   0.685668083s  INFO prepare_target{force=false package_id=objc-foundation v0.1.1 target="objc_foundation"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/.fingerprint/objc-foundation-61e0887950342071/lib-objc_foundation`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.686134167s  INFO prepare_target{force=false package_id=objc_id v0.1.1 target="objc_id"}: cargo::core::compiler::fingerprint: fingerprint dirty for objc_id v0.1.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("objc_id", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/objc_id-0.1.1/src/lib.rs", Edition2015) }
+   0.686139500s  INFO prepare_target{force=false package_id=objc_id v0.1.1 target="objc_id"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "objc" })
+   0.734928917s  INFO prepare_target{force=false package_id=tauri-runtime-wry v0.14.11 target="tauri_runtime_wry"}: cargo::core::compiler::fingerprint: fingerprint dirty for tauri-runtime-wry v0.14.11/Check { test: false }/TargetInner { ..: lib_target("tauri_runtime_wry", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-runtime-wry-0.14.11/src/lib.rs", Edition2021) }
+   0.734942917s  INFO prepare_target{force=false package_id=tauri-runtime-wry v0.14.11 target="tauri_runtime_wry"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "wry" })
+   0.736542417s  INFO prepare_target{force=false package_id=wry v0.24.11 target="wry"}: cargo::core::compiler::fingerprint: fingerprint dirty for wry v0.24.11/Check { test: false }/TargetInner { ..: lib_target("wry", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wry-0.24.11/src/lib.rs", Edition2021) }
+   0.736551583s  INFO prepare_target{force=false package_id=wry v0.24.11 target="wry"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "tao" })
+   0.737672667s  INFO prepare_target{force=false package_id=tao v0.16.10 target="tao"}: cargo::core::compiler::fingerprint: fingerprint dirty for tao v0.16.10/Check { test: false }/TargetInner { ..: lib_target("tao", ["lib"], "/Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tao-0.16.10/src/lib.rs", Edition2021) }
+   0.737678833s  INFO prepare_target{force=false package_id=tao v0.16.10 target="tao"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDependency { name: "build_script_build", dep_mtime: FileTime { seconds: 1764230754, nanos: 356674172 }, max_mtime: FileTime { seconds: 1764230657, nanos: 660856863 } })
+   0.753949667s  INFO prepare_target{force=false package_id=test-recorder v0.1.0 (/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri) target="test-recorder"}: cargo::core::compiler::fingerprint: fingerprint error for test-recorder v0.1.0 (/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri)/Check { test: true }/TargetInner { name: "test-recorder", doc: true, ..: with_path("/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/src/main.rs", Edition2021) }
+   0.753962542s  INFO prepare_target{force=false package_id=test-recorder v0.1.0 (/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri) target="test-recorder"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/.fingerprint/test-recorder-303f37a0013e3fa1/test-bin-test-recorder`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+    Checking objc_exception v0.1.2
+    Checking regex-syntax v0.8.8
+    Checking mac-notification-sys v0.6.8
+    Checking pathdiff v0.2.3
+    Checking objc v0.2.7
+    Checking open v3.2.0
+    Checking notify-rust v4.11.7
+    Checking cocoa-foundation v0.1.2
+    Checking objc_id v0.1.1
+    Checking objc-foundation v0.1.1
+    Checking rfd v0.10.0
+    Checking cocoa v0.24.1
+    Checking cocoa v0.25.0
+    Checking regex-automata v0.4.13
+    Checking tao v0.16.10
+    Checking globset v0.4.18
+    Checking regex v1.12.2
+    Checking ignore v0.4.25
+    Checking wry v0.24.11
+    Checking tauri-runtime-wry v0.14.11
+    Checking tauri v1.8.3
+    Checking test-recorder v0.1.0 (/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri)
+error: could not compile `test-recorder` (bin "test-recorder" test) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `test-recorder` (bin "test-recorder") due to 1 previous error

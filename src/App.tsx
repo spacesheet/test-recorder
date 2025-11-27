@@ -1,50 +1,66 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import { invoke } from "@tauri-apps/api/core";
-import "./App.css";
+import React, { useEffect } from 'react';
+import { useRecorder } from './hooks/useRecorder';
+import { StatusPanel } from './components/StatusPanel';
+import { RecordingButton } from './components/RecordingButton';
+import { TradeHistory } from './components/TradeHistory';
+import './App.css';
 
 function App() {
-  const [greetMsg, setGreetMsg] = useState("");
-  const [name, setName] = useState("");
+  const {
+    status,
+    tradeHistory,
+    error,
+    startMonitoring,
+    stopMonitoring,
+    captureScreenshot,
+    fetchTradeHistory,
+  } = useRecorder();
 
-  async function greet() {
-    // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-    setGreetMsg(await invoke("greet", { name }));
-  }
+  useEffect(() => {
+    // 초기 거래 내역 로드
+    fetchTradeHistory();
+  }, [fetchTradeHistory]);
 
   return (
-    <main className="container">
-      <h1>Welcome to Tauri + React</h1>
+    <div className="app">
+      <header className="app-header">
+        <h1>📹 HTS 트레이딩 레코더</h1>
+        <p className="subtitle">주식 거래를 자동으로 기록하고 분석하세요</p>
+      </header>
 
-      <div className="row">
-        <a href="https://vite.dev" target="_blank">
-          <img src="/vite.svg" className="logo vite" alt="Vite logo" />
-        </a>
-        <a href="https://tauri.app" target="_blank">
-          <img src="/tauri.svg" className="logo tauri" alt="Tauri logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <p>Click on the Tauri, Vite, and React logos to learn more.</p>
+      <main className="app-main">
+        {error && (
+          <div className="error-banner">
+            ⚠️ {error}
+          </div>
+        )}
 
-      <form
-        className="row"
-        onSubmit={(e) => {
-          e.preventDefault();
-          greet();
-        }}
-      >
-        <input
-          id="greet-input"
-          onChange={(e) => setName(e.currentTarget.value)}
-          placeholder="Enter a name..."
-        />
-        <button type="submit">Greet</button>
-      </form>
-      <p>{greetMsg}</p>
-    </main>
+        <section className="section">
+          <StatusPanel status={status} />
+        </section>
+
+        <section className="section">
+          <RecordingButton
+            isRecording={status.is_recording}
+            onStart={startMonitoring}
+            onStop={stopMonitoring}
+            onCapture={captureScreenshot}
+          />
+        </section>
+
+        <section className="section">
+          <TradeHistory
+            trades={tradeHistory}
+            onRefresh={fetchTradeHistory}
+          />
+        </section>
+      </main>
+
+      <footer className="app-footer">
+        <p>💡 Tip: HTS 프로그램을 실행하면 자동으로 녹화가 시작됩니다.</p>
+        <p className="version">v0.1.0 | Made with Tauri + React</p>
+      </footer>
+    </div>
   );
 }
 

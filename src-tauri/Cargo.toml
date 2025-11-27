@@ -1,25 +1,35 @@
 [package]
 name = "test-recorder"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+description = "HTS Trading Recorder"
+authors = ["Seol"]
+license = ""
+repository = ""
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[lib]
-# The `_lib` suffix may seem redundant but it is necessary
-# to make the lib name unique and wouldn't conflict with the bin name.
-# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
-name = "test_recorder_lib"
-crate-type = ["staticlib", "cdylib", "rlib"]
-
 [build-dependencies]
-tauri-build = { version = "2", features = [] }
+tauri-build = { version = "1.5", features = [] }
 
 [dependencies]
-tauri = { version = "2", features = [] }
-tauri-plugin-opener = "2"
-serde = { version = "1", features = ["derive"] }
-serde_json = "1"
+tauri = { version = "1.5", features = [ "notification-all", "fs-all", "shell-open", "window-show", "window-minimize", "window-set-focus", "window-maximize", "window-hide", "window-close", "notification"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+chrono = { version = "0.4", features = ["serde"] }
 
+# 화면 캡처 (안정적인 라이브러리만)
+screenshots = "0.6"
+
+# 프로세스 모니터링
+sysinfo = "0.30"
+
+# 윈도우 캡처
+xcap = "0.0.9"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[target.'cfg(target_os = "macos")'.dependencies]
+cocoa = "0.25"
+objc = "0.2"

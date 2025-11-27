@@ -1,35 +1,65 @@
 {
-  "$schema": "https://schema.tauri.app/config/2",
-  "productName": "test-recorder",
-  "version": "0.1.0",
-  "identifier": "com.ps.test-recorder",
-  "build": {
-    "beforeDevCommand": "npm run dev",
-    "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "npm run build",
-    "frontendDist": "../dist"
-  },
-  "app": {
-    "windows": [
-      {
-        "title": "test-recorder",
-        "width": 800,
-        "height": 600
-      }
-    ],
-    "security": {
-      "csp": null
+    "build": {
+        "beforeDevCommand": "npm run dev",
+        "beforeBuildCommand": "npm run build",
+        "devPath": "http://localhost:5173",
+        "distDir": "../dist"
+    },
+    "package": {
+        "productName": "Trading Recorder",
+        "version": "0.1.0"
+    },
+    "tauri": {
+        "allowlist": {
+            "all": false,
+            "fs": {
+                "all": true,
+                "scope": ["$APPDATA/*", "$HOME/*"]
+            },
+            "shell": {
+                "all": false,
+                "open": true
+            },
+            "window": {
+                "all": false,
+                "close": true,
+                "hide": true,
+                "show": true,
+                "maximize": true,
+                "minimize": true,
+                "setFocus": true
+            },
+            "notification": {
+                "all": true
+            }
+        },
+        "bundle": {
+            "active": true,
+            "identifier": "com.seol.test-recorder",
+            "resources": [],
+            "externalBin": [],
+            "copyright": "",
+            "category": "Utility",
+            "shortDescription": "HTS Trading Recorder",
+            "longDescription": "Automatically record and monitor HTS trading activities"
+        },
+        "security": {
+            "csp": null
+        },
+        "windows": [
+            {
+                "fullscreen": false,
+                "resizable": true,
+                "title": "Trading Recorder",
+                "width": 1000,
+                "height": 800,
+                "minWidth": 800,
+                "minHeight": 600,
+                "visible": true,
+                "center": true,
+                "decorations": true,
+                "alwaysOnTop": false
+            }
+        ]
     }
-  },
-  "bundle": {
-    "active": true,
-    "targets": "all",
-    "icon": [
-      "icons/32x32.png",
-      "icons/128x128.png",
-      "icons/128x128@2x.png",
-      "icons/icon.icns",
-      "icons/icon.ico"
-    ]
-  }
 }

@@ -1,0 +1,21 @@
+test-recorder/
+├── src/                          # React 프론트엔드
+│   ├── App.tsx
+│   ├── components/
+│   │   ├── StatusPanel.tsx
+│   │   ├── RecordingButton.tsx
+│   │   └── TradeHistory.tsx
+│   ├── hooks/
+│   │   └── useRecorder.ts
+│   └── styles/
+│       └── App.css
+├── src-tauri/                    # Rust 백엔드
+│   ├── src/
+│   │   ├── main.rs
+│   │   ├── recorder.rs
+│   │   ├── process_monitor.rs
+│   │   ├── window_capture.rs
+│   │   └── models.rs
+│   ├── Cargo.toml
+│   └── tauri.conf.json
+└── package.json
