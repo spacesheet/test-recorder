@@ -18,5 +18,5 @@ src/window_capture.rs:
 /Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/../dist/assets/index-BAbUEQiV.css:
 /Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/build/test-recorder-1b1adcd76915a152/out/tauri-codegen-assets/0c51a1247e38bb29c7ff0a21f66fb9090e5cd80b2d601e8c545490f7f9f5d857.css:
 
-# env-dep:CARGO_PKG_AUTHORS=Seol
+# env-dep:CARGO_PKG_AUTHORS=ps
 # env-dep:CARGO_PKG_DESCRIPTION=HTS Trading Recorder

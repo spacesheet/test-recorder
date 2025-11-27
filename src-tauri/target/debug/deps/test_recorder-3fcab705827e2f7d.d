@@ -10,6 +10,6 @@ src/window_capture.rs:
 /Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/build/test-recorder-d4fdd202c4cda986/out/icon.png:
 /Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/build/test-recorder-d4fdd202c4cda986/out/Info.plist:
 
-# env-dep:CARGO_PKG_AUTHORS=Seol
+# env-dep:CARGO_PKG_AUTHORS=ps
 # env-dep:CARGO_PKG_DESCRIPTION=HTS Trading Recorder
 # env-dep:OUT_DIR=/Users/ps/workspace/HTS-Recorder/test-recorder/src-tauri/target/debug/build/test-recorder-d4fdd202c4cda986/out

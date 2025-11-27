@@ -2,7 +2,7 @@
 name = "test-recorder"
 version = "0.1.0"
 description = "HTS Trading Recorder"
-authors = ["Seol"]
+authors = ["ps"]
 license = ""
 repository = ""
 edition = "2021"

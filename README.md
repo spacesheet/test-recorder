@@ -122,7 +122,7 @@ MIT License
 
 ## 👨‍💻 개발자
 
-Seol - Backend Developer
+ps - Backend Developer
 
 ---
 
