@@ -64,11 +64,11 @@ pub static PROFILE: &str = "debug";
 #[allow(clippy::needless_raw_string_hashes)]
 #[doc=r#"The compiler that cargo resolved to use."#]
 #[allow(dead_code)]
-pub static RUSTC: &str = "rustc";
+pub static RUSTC: &str = "/Users/ps/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustc";
 #[allow(clippy::needless_raw_string_hashes)]
 #[doc=r#"The documentation generator that cargo resolved to use."#]
 #[allow(dead_code)]
-pub static RUSTDOC: &str = "rustdoc";
+pub static RUSTDOC: &str = "/Users/ps/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustdoc";
 #[allow(clippy::needless_raw_string_hashes)]
 #[doc=r#"Value of OPT_LEVEL for the profile used during compilation."#]
 #[allow(dead_code)]
@@ -98,11 +98,11 @@ pub static FEATURES_LOWERCASE: [&str; 1] = ["threading"];
 #[allow(dead_code)]
 pub static FEATURES_LOWERCASE_STR: &str = "threading";
 #[allow(clippy::needless_raw_string_hashes)]
-#[doc=r#"The output of `rustc -V`"#]
+#[doc=r#"The output of `/Users/ps/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustc -V`"#]
 #[allow(dead_code)]
 pub static RUSTC_VERSION: &str = "rustc 1.90.0 (1159e78c4 2025-09-14)";
 #[allow(clippy::needless_raw_string_hashes)]
-#[doc=r#"The output of `rustdoc -V`; empty string if `rustdoc -V` failed to execute"#]
+#[doc=r#"The output of `/Users/ps/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustdoc -V`; empty string if `/Users/ps/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustdoc -V` failed to execute"#]
 #[allow(dead_code)]
 pub static RUSTDOC_VERSION: &str = "rustdoc 1.90.0 (1159e78c4 2025-09-14)";
 #[allow(clippy::needless_raw_string_hashes)]

@@ -85,4 +85,4 @@
 /Users/ps/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/objc2-0.6.3/src/../examples/class_with_lifetime.rs:
 
 # env-dep:CARGO_PKG_VERSION=0.6.3
-# env-dep:MACOSX_DEPLOYMENT_TARGET=10.13
+# env-dep:MACOSX_DEPLOYMENT_TARGET
