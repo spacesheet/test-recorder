@@ -42,7 +42,7 @@
             "category": "Utility",
             "shortDescription": "HTS Trading Recorder",
             "longDescription": "Automatically record and monitor HTS trading activities",
-            "icon": ["icon/icon.ico"]
+            "icon": ["icons/icon.ico"]
         },
         "security": {
             "csp": null
